@@ -1,0 +1,3 @@
+* sticky will end after its element end tag ?
+
+* with 3 common relative class names - absolute will take its parent only
