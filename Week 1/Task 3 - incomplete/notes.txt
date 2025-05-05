@@ -1,0 +1,3 @@
+in card & card1 
+- why it is not comming in center even for 100% zoom ? 
+- what is default size of screens ?
