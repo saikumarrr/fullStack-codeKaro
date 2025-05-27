@@ -29,25 +29,52 @@ function add() {
         email: email.value
     }
 
-    const findIndex = items.findIndex((x) => x.email == obj.email) ;
+    const findIndex = items.findIndex((x) => x.email == obj.email);
 
-    if (findIndex == -1) {
+    if (findIndex == -1 && name.value && email.value) {
         items.push(obj);
+
+        var checkBox = document.createElement("input");
+        checkBox.setAttribute('type', 'checkbox');
+        checkBox.setAttribute('value', obj.name);
+
         let div = document.createElement('div');
         let p1 = document.createElement('p');
-        let p2 = document.createElement('p');
+
         div.classList.add('items')
+        div.style.display = 'flex';
+        div.style.gap = '10px';
         itemsDiv.appendChild(div);
-        p1.innerText = name.value;
-        p2.innerText = email.value;
+        p1.innerText = name.value + ' - ' + email.value;
+        div.appendChild(checkBox);
         div.appendChild(p1);
-        div.appendChild(p2);
+
+        checkBox.addEventListener('click', () => {
+            selectedItem(checkBox, obj.name, div);
+        });
+        
     } else {
-        alert('User already exists')
+        if (!name.value && !email.value) {
+            alert('Enter values');
+        } else {
+            alert('User already exists');
+        }
     }
 
     console.log(items);
 
     name.value = '';
     email.value = '';
+}
+
+
+function selectedItem(checkBox, objName, itemsDiv) {
+    // const inx = items.findIndex( ele => ele.name == objName);
+    console.log(checkBox.checked);
+    if (checkBox.checked) {
+        itemsDiv.style.textDecoration = 'line-through';
+    } else {
+        itemsDiv.style.textDecoration = 'none';
+    }
+    
 }
