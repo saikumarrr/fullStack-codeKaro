@@ -17,7 +17,7 @@ li{
 
 .img_div{
     margin: 20px auto;
-    width: 500px;
+    width: 400px;
     display: flex;
     flex-direction: column;
     gap: 35px;
@@ -27,6 +27,7 @@ li{
     height: 350px;
     border-radius: 10px;
     width: 100%;
+    object-fit: cover;
 }
 
 .yt, .ig{
