@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.container-1{
+    width: 500px;
+    margin: 60px auto;
+    overflow: inherit;
+}
+
+.heading-dice{
+    font-size: 30px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.desc-dice{
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+button{
+    width: 100%;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 10px;
+    background-color: #000000;
+    color: white;
+    border-radius: 8px;
+}
+
+.dice{
+    text-align: center;
+    height: 80px;
+    width: 80px;
+    border: 5px solid black;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+}
+
+.spin{
+    animation-name: roll;
+    animation-duration: 0.7s;
+}
+
+@keyframes roll {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* checklist */
+
+.desc {
+    font-size: 20px;
+    padding: 20px 0px;
+}
+
+.input{
+    width: 40%;
+    padding: 12px 21px;
+    font-size: 18px;
+    /* outline: none; */
+    border: 3px solid #d4d4d4;
+    outline-color: #8a8a8a;
+    border-radius: 8px;
+}
+
+.items{
+    background-color: #8a8a8a60;
+    margin-top: 12px;
+    padding: 12px 20px;
+    border-radius: 8px;
+}
+
+
+button:active {
+  transform: translateY(1px);
+}
