@@ -26,8 +26,14 @@ li{
 .img_1{
     height: 350px;
     border-radius: 10px;
+    width: 100%;
 }
 
 .yt, .ig{
     border-radius: 10px;
+    width: 100%;
+}
+
+.igQuote {
+    width: 100%;
 }
