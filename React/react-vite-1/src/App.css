@@ -1,0 +1,27 @@
+*{
+    background-color:#e2e2e1;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.card-div{
+    font-size: large;
+    width: 650px;
+    margin: auto;
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+img{
+    height: 70px;
+    width: 70px;
+    padding: 20px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: white;
+}
+
+p{
+    
+    background-color: white;
+}
